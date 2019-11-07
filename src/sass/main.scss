@@ -1,0 +1,149 @@
+@import "../../node_modules/bootstrap/scss/bootstrap-grid.scss";
+@import "./reset";
+@import "./fonts";
+
+
+a {
+    text-decoration: none;
+    // text-decoration: underline dotted;
+    color: #9b968e;
+    font-family: "Helvetica";
+    font-size: 18px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Exo2";
+}
+
+
+.header-title {
+    padding: 25px 0;
+    font-size: 36px;
+}
+
+.top-nav ul {
+    list-style: none;
+}
+
+.top-nav ul li {
+    margin-right: 20px;
+    background-color: #f5f3e8;
+}
+
+.top-nav ul a {
+    box-sizing: border-box;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+    padding: 15px 30px;
+}
+
+
+.top-nav ul li:not(:nth-child(2)) a {
+    text-indent: 1000%;
+    white-space: nowrap;
+}
+
+.top-nav ul li:nth-child(3) a {
+    background-image: url("../img/bonfesto.png");
+}
+
+.top-nav ul li:nth-child(4) a {
+    background-image: url("../img/uillmonte.png");
+}
+
+.top-nav ul li:nth-child(5) a {
+    background-image: url("../img/cooking.png");
+}
+
+.top-nav ul li:nth-child(3) {
+    background-color: #8fb52c;
+}
+
+#bar {
+    display: none;
+}
+
+// ---------------------------------
+main {
+    margin-top: 15px;
+}
+
+.product-photo {
+    width: 100%;
+}
+
+.product-details,
+.extra-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.product-details span {
+    font-family: "Helvetica";
+    color: #3c2f20;
+    font-size: 15px;
+}
+
+.product-details a:first-of-type {
+    font-size: 30px;
+}
+
+.product-details a:nth-of-type(2) {
+    font-size: 20px;
+}
+
+.product-details li {
+    background-color: #8fb52c;
+    transform: scale(0.7);
+    margin-left: -20px;
+}
+
+.product-details li a {
+    box-sizing: border-box;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+    padding: 5px 10px;
+    text-indent: 1000%;
+    white-space: nowrap;
+    background-image: url("../img/bonfesto.png");
+}
+
+.product-details span:nth-of-type(2) {
+    color: #1d1813;
+}
+
+.extra-details a{
+    text-decoration: underline dotted;
+    color: #3c2f20;
+}
+
+.extra-details:hover a{
+    color: #638dfe;
+}
+
+.mb {
+    margin-bottom: 40px;
+}
+
+
+@media (max-width: 768px) {
+    .top-nav ul li{
+        display: none;
+    }
+
+    #bar {
+        font-size: 30px;
+        padding: 20px;
+        background-color: #f5f3e8;
+        border-radius: 20%;
+        display: block;
+    }
+}

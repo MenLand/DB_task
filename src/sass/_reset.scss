@@ -1,0 +1,15 @@
+body, ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+@for $h from 1 to 7 {
+    h#{$h} {
+        margin: 0;
+        padding: 0;
+    }  
+}
